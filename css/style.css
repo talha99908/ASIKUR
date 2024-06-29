@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+        --font-family: "Poppins", sans-serif;
+        --second-family: "PT Sans", sans-serif;
+        --third-family: "Potta One", sans-serif;
+        --frirst-color: #353535;
+        --second-color: #FFCC00;
+}
+.container{
+    width: 1104px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align-center{
+    align-items: center;
+}
+ a{
+    padding-right:20px;
+    padding-left: 20px;
+} 
+.btn{
+border-radius: 20px;
+display: inline-block;
+background-color: var(--second-color);
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 20px;
+line-height: 180%;
+color: #fff;
+padding: 22px 45px;
+border: 1px solid transparent;
+}
+.btn:hover{
+    box-shadow: 38px 38px 76px #736f6f,
+    -38px -38px 76px;
+    transition: 0.5s;
+    border: 1px solid var(--frirst-color);
+}
+.btn.outline{
+border: 1px solid #000;
+border-radius: 20px;
+font-family: var(--font-family);
+font-weight: 500;
+font-size: 20px;
+line-height: 180%;
+color: var(--frirst-color);
+padding: 22px 45px;
+background-color: transparent;
+}
+.btn.outline:hover{
+    box-shadow: 38px 38px 76px #736f6f,
+    -38px -38px 76px;
+    transition: 0.5s;
+    border: 1px solid var(--frirst-color);
+}
+nav .logo{
+    width: 30%;
+}
+nav .menu{
+    width: 70%;
+    text-align: right;
+}
+nav .menu ul li a{
+text-decoration: none;
+color: var(--frirst-color);
+text-transform: uppercase;
+font-weight: 500;
+font-size: 15px;
+line-height: 200%;
+padding: 18px 22px 5px;
+display: inline-block;
+position: relative;
+}
+nav .menu ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+nav .menu ul li a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: var(--frirst-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+nav .menu ul li:hover a::after{
+width: 100%;
+transition: 0.5s;
+}
+#hero .herotext{
+    width: 60%;
+}
+#hero .herotext h6{
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 24px;
+color: var(--frirst-color);
+padding-top: 119px;
+}
+#hero .herotext h1{
+font-family: var(--second-family);
+font-weight: 700;
+font-size: 64px;
+color: var(--frirst-color);
+padding-top: 15px;
+padding-bottom: 25px;
+}
+#hero .herotext p{
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+line-height: 180%;
+color: var(--frirst-color);
+padding-bottom: 45px;
+}
+#hero .herotext h6{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 180%;
+    color: var(--frirst-color);
+}
+#hero .heroimage{
+width: 596px;
+height: 623px;
+margin-top: 56px;
+width: 40%;
+padding-left: 28px;
+}
